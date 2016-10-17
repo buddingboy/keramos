@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Keramos 2016</title>
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+    </head>
+    <body>
+
+       <div class="header">
+
+           <div class="iit">
+               <img class="img-iit" src="img/iit.png">
+               <p>Indian Institute of Technology</p>
+               <p>(BHU) Varanasi</p>
+           </div>
+
+           <div class="central-tab">
+           <div class="nav-text">
+               <a href="about.html"><span>About</span></a>
+               <span>&#9672;</span>
+               <a href="events.html"><span>Events</span></a>
+               <span>&#9672;</span>
+               <a href="contacts.html"><span>Contacts</span></a>
+			   <span>&#9672;</span>
+               <a target="_blank" href="register.html"><span>Register</span></a>
+           </div>
+           </div>
+
+           <div class="ics">
+               <img class="img-ics" src="img/ics.png">
+               <p>Indian Ceramic Society</p>
+               <p>Student Chapter</p>
+           </div>
+       
+       </div>
+
+        <div class="first-wrap">
+            <div class="second-wrap">
+
+                <img alt="KERAMOS" class="keramos" src="img/keramos.png">
+                <p class="date">March 12-13, 2016</p>
+
+                <div class="event-info-wrapper">
+                <div class="event-info">
+                    
+                    <p>Department of Ceramic Engineering</p>
+                    <p>Indian Institute of Technology</p>
+                    <p>Banaras Hindu University, Varanasi</p>
+                </div>
+                </div>
+
+             </div>        
+        </div>
+
+        <div class="loader circle-div">
+            <img src="img/circle.png" class="circle circle-loader">
+            <img src="img/k.png" class="k k-loader ">
+         </div>  
+
+        <img src="img/logo.png" class="k-back">
+
+	
+        <script src="js/jquery.js"></script>
+        <script>
+
+            var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+
+            var step9 = function () {
+                $('.k').removeClass('flip').one(animationend);
+            }
+
+            var step6 = function () {
+                $('.event-info').css("visibility", "visible");
+                $('.event-info').addClass('animated fadeIn').one(animationend, step9);
+            }
+
+            var step5 = function () {
+                $('.date').css("visibility", "visible");
+                $('.date').addClass('animated flipInX').one(animationend, step6);
+            }
+
+            var step4 = function () {
+                $('.keramos').css("visibility", "visible");         
+                $('.keramos').addClass('animated bounceInDown').one(animationend, step5); 
+            }
+
+            var step3 = function () {
+                $('.iit, .ics, .central-tab').css("visibility", "visible");
+                $('.k, .circle').css("visibility", "hidden");
+                 $('.central-tab').addClass('animated slideInDown');               
+                $('.iit, .ics').addClass('animated fadeIn').one(animationend, step4); 
+            }
+
+            var step2 = function () {
+                $('.k').css("visibility", "visible");
+                $('.k').addClass('animated flip').one(animationend, step3);
+            }
+
+            $(window).load(function() {
+            // executes when complete page is fully loaded, including all frames, objects and images
+            $('.circle').css("visibility", "visible");
+            $('.circle').addClass('animated rotateIn').one(animationend, step2);
+             });
+
+        </script>
+
+    </body>
+</html>

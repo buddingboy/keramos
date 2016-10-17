@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Keramos 2016</title>
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+    </head>
+    <body>
+
+       <div class="header">
+           <div class="left-side">
+           <div class="header-text"><h1>About</h1></div>
+           </div>
+
+           <div class="right-side">
+           <div class="right-nav-text">
+               <a href="index.html"><span class="home-icon-span"><img class="home-icon" src="img/home.png"></span></a>
+               <a href="events.html"><span>Events</span></a>
+               <a href="contacts.html"><span>Contacts</span></a>
+           </div>
+           </div>
+       
+       </div>
+
+        <div class="about-wrapper">
+
+            <div class="about-keramos">
+        <h2>Keramos</h2>
+            <p>A joint venture of Indian Ceramic Society, Student chapter and Department of Ceramic Engineering IIT BHU, Keramos promises a feat beyond comparisons. The student chapter, Indian Ceramic Society (IIT BHU) is all set to bring you a plethora of events, and a spectacle worth waiting for.
+The first edition saw a vast external participation competing with home teams in a wide range of technical events. After an exemplary success last year, Keramos returns to set the bar even higher, upholding the 91 year old legacy of the Ceramic Department, in a bid to provide the perfect stage for participants to showcase their technical skills and win loads of cash prizes.
+</p>
+</div>
+
+            <div class="about-dept">
+       <h2>Dept. of Ceramic Engineering</h2>
+            <p>The founder of Banaras Hindu University, Pandit Madan Mohan Malviya instituted a course in Ceramic Technology as early as 1924 with the gallant objective for the advancement of glass and ceramic technology in India. In the year 1956, Department of Glass Technology was merged to form Department of Silicate Technology which further was renamed as Department of Ceramic Engineering making it one of the oldest departments in the then Institute of Technology.
+In 2012 Institute of Technology joined the elite group of IITs and thus IIT (BHU) Varanasi became the only IIT to offer B.Tech, M.Tech and PhD programmes in Ceramic Engineering and Technology. The department has since been producing pioneers in the field of ceramics with comprehensive scientific and technological background. Ceramic Engineering department at IIT BHU spearheads scientific research in the field of nanotechnology, electro-ceramics, bio-ceramics and other contemporary and traditional facets of ceramics.
+</p>
+</div>
+
+            <div class="about-convenor">
+            <h2>Convenor’s Note</h2>
+            <p>
+                Keramos was conceptualized with a vision, a vision similar to that of the father of the glorious Banaras Hindu University, Pt. Madan Mohan Malviya, to reiterate the splendour of the transcendental Science of Ceramics. Ceramic sciences through the ages have shown remarkable versatility and incomparable prospects. Keramos as such aspires to be versatile and a hallmark in the activities of the Department of Ceramic Engineering, IIT (BHU) Varanasi. Keramos ’16 will be a flagship event in the sheer magnitude and scale of events. Our one of a kind Guest Lectures will bring together the best minds in India to deliberate upon the future of Ceramics in India. A paper presentation about “Traditional Ceramics and Advanced Materials” shall be one of our other prime focuses. We aim to bring to you an extravaganza, a journey through the ages. Complete with Technical Case Studies, Quizzes, a social’s night and much more, the Second Edition of Keramos shall be nothing short of a treat, starting the moment you step in the IIT BHU Campus on (start date), in the holy City of Varanasi. Looking forward to hosting you at Keramos ’16.
+            </p>
+            </div>
+
+        </div>
+
+            
+            <div class="loader circle-div">
+               <img src="img/circle.png" class="circle circle-loader">
+               <img src="img/k.png" class="k k-loader ">
+            </div>  
+
+
+        <script src="js/jquery.js"></script>
+        <script>
+
+            var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+
+            var step6 = function () {
+                $('.about-convenor').css("visibility", "visible");
+                $('.about-convenor').addClass('animated fadeIn'); 
+            }
+
+            var step5 = function () {
+                $('.about-dept').css("visibility", "visible");
+                $('.about-dept').addClass('animated fadeIn').one(animationend, step6); 
+            }
+
+            var step4 = function () {
+                $('.about-keramos').css("visibility", "visible");
+                $('.about-keramos').addClass('animated fadeIn').one(animationend, step5); 
+            }
+
+            var step3 = function () {
+                $('.left-side, .right-side').css("visibility", "visible");
+                $('.k, .circle').css("visibility", "hidden");
+                $('.left-side, .right-side').addClass('animated slideInDown').one(animationend, step4);
+            }
+
+            var step2 = function () {
+                $('.k').css("visibility", "visible");
+                $('.k').addClass('animated flip').one(animationend, step3);
+            }
+
+            $(window).load(function() {
+            // executes when complete page is fully loaded, including all frames, objects and images
+            $('.circle').css("visibility", "visible");
+            $('.circle').addClass('animated rotateIn').one(animationend, step2);
+             });
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Register | Keramos </title>
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+    </head>
+    <body>
+
+       <div class="header">
+           <div class="left-side">
+           <div class="header-text"><h1>Register</h1></div>
+           </div>
+
+           <div class="right-side">
+           <div class="right-nav-text">
+               <a href="index.html"><span class="home-icon-span"><img class="home-icon" src="img/home.png"></span></a>
+               <a href="about.html"><span>About</span></a>
+               <a href="events.html"><span>Events</span></a>
+               <a href="contacts.html"><span>Contacts</span></a>
+           </div>
+           </div>
+       
+       </div>
+
+<div class="form-wrapper">
+<form method="post" action="email.php" id="contactForm">
+
+<h1>Registration Form</h1>
+
+    <div class="input-element">
+     <label>Name</label><input type="text" placeholder="Name" name="name" />    
+    </div>
+    <div class="input-element">
+     <label>Email</label><input type="email" placeholder="Email" name="email" />
+    </div>    
+    <div class="input-element">
+    <label>Mobile</label><input type="text" placeholder="Mobile Number" name="mobile" />
+    </div> 
+    <div class="input-element">
+    <label>College</label><input type="text" placeholder="Your College Name" name="college" />
+    </div>
+     <div class="input-element">
+    <label>City</label><input type="text" placeholder="College's City" name="city" />
+    </div>
+    <div class="select-event-label">
+    <h2>Select Events</h2>
+    </div> 
+    
+    <div class="input-element event-options">
+   <label><input type="checkbox" class="event-option myinput large custom" name="opt[]" value="Paper Presentation"><span>Paper Presentation</span></label>
+    <label><input type="checkbox" class="event-option myinput large custom" name="opt[]" value="Technical Quiz"><span>Technical Quiz</span></label>
+    <label><input type="checkbox" class="event-option myinput large custom" name="opt[]" value="Case Study"><span>Case Study</span></label>
+    <label><input type="checkbox" class="event-option myinput large custom" name="opt[]" value="Maniac Quiz"><span>Maniac Quiz</span></label>
+    <label><input type="checkbox" class="event-option myinput large custom" name="opt[]" value="Guest Lecture"><span>Guest Lecture</span></label>
+    <label><input type="checkbox" class="event-option myinput large custom" name="opt[]" value="iShare"><span>iShare</span></label>
+    </div>
+    
+      
+    <div class="input-element register-label">
+   <input type="submit" value="REGISTER" id="submit" name="contactSubmit" />
+    </div>
+
+</form>
+</div>
+
+
+
+
+<div id="contactResponse"></div>
+
+
+
+            
+            <div class="loader circle-div">
+               <img src="img/circle.png" class="circle circle-loader">
+               <img src="img/k.png" class="k k-loader ">
+            </div>  
+
+
+        <script src="js/jquery.js"></script>
+        <script>
+
+            var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+
+            var step9 = function () {
+                $('.k').removeClass('flip').one(animationend);
+            }
+
+            var step4 = function () {
+                $('.form-wrapper').css("visibility", "visible");
+                $('.form-wrapper').addClass('animated fadeIn').one(animationend, step9); 
+            }
+
+            var step3 = function () {
+                $('.left-side, .right-side').css("visibility", "visible");
+                $('.k, .circle').css("visibility", "hidden");
+                $('.left-side, .right-side').addClass('animated slideInDown').one(animationend, step4);
+            }
+
+            var step2 = function () {
+                $('.k').css("visibility", "visible");
+                $('.k').addClass('animated flip').one(animationend, step3);
+            }
+
+            $(window).load(function() {
+            // executes when complete page is fully loaded, including all frames, objects and images
+            $('.circle').css("visibility", "visible");
+            $('.circle').addClass('animated rotateIn').one(animationend, step2);
+             });
+
+        </script>
+
+        <script>
+$('#contactForm').on('submit', function(e) {
+    e.preventDefault(); //Prevents default submit
+    var form = $(this); 
+    var post_url = form.attr('action'); 
+    var post_data = form.serialize(); //Serialized the form data for form.php
+    $('#loader', form).html('<img src="img/loader.gif" /> Please Wait...');
+    $.ajax({
+        type: 'POST',
+        url: 'email.php', // Your form script
+        data: post_data,
+        success: function(msg) {
+            $(form).fadeOut(500, function(){
+                form.html(msg).fadeIn();
+            });
+        }
+    });
+});
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,833 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+body {
+    background: #D7D7D7 url('../img/bg.jpg') repeat repeat;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: auto;
+}
+
+.header{
+    margin-top: -8px;    
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.left-side{
+    display: inline-block;
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+.header-text{
+    margin: 0;
+    display: inline-block;
+    background: #07073F;
+    vertical-align: top;
+    color: #fff;
+    padding: 2px;
+    border-radius: 0 0 15px 15px;
+   
+    
+}
+
+
+.right-side{
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #fff;
+    visibility: hidden;
+}
+
+.right-nav-text span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #07073F;
+    border: 1px solid #07073F;
+    border-radius: 0 0 10px 10px;
+    margin-top: -15px;
+}
+
+.home-icon{
+    width: 30px;
+    padding-top: 3px;
+}
+
+.home-icon-span {
+    padding: 8px 10px 2px!important;
+}
+
+.header-text>h1{
+    margin: 0;
+   font-size: 2.5em;
+    padding: 5px;
+     height: 50px;  
+ 
+ }
+
+.wrapper{
+    padding-top: 0px;
+    width: 850px;
+    margin: auto;
+    position: relative;
+}
+
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+.padding-left-60{
+    padding-left: 60px;
+}
+
+.box {
+    width: 290px;
+    height: 180px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 5px;
+    vertical-align: top;
+}
+
+.box.sm-height-box{
+    height: 170px;
+}
+
+.box h2 {
+    background: #07073F;
+    border-radius: 10px;
+    padding: 3px;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 0;
+	opacity: 0.85;
+}
+
+.box a {
+    color:#202020;
+    text-decoration: none;
+}
+
+.box h2:hover, .box p:hover {
+	opacity: 1;
+}
+
+.box p {
+    text-align: justify;
+    text-align-last: center;
+    margin: auto;
+    width: 95%;
+    font-size: 13px;
+	color: #000;
+    font-weight: 600;
+	opacity: 0.9;
+}
+
+.u2{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: -4px;
+    width: 40px;
+    height: 130px;
+    border-top: 5px solid #000;
+    border-right: 5px solid #000;
+}
+
+.u3{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-right: -5px;
+    width: 40px;
+    height: 130px;
+    border-top: 5px solid #000;
+    border-left: 5px solid #000;
+}
+
+.m2{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: -4px;
+    width: 75px;
+    border-top: 5px solid #000;
+}
+
+.m3{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 65px;
+    margin-left: 21px;
+    height: 120px;
+    width: 0;
+    border-left: 5px solid #000;
+}
+
+.m4{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 65px;
+    margin-left: 45px;
+    height: 120px;
+    border-left: 5px solid #000;
+}
+
+.m5{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 22px;
+    margin-right: -5px;
+    width: 75px;
+    border-top: 5px solid #000;
+}
+
+.l2{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-left: -5px;
+    width: 41px;
+    height: 15px;
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+}
+
+.l3{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    margin-left: 45px;
+    margin-right: -5px;
+    width: 41px;
+    height: 15px;
+    border-bottom: 5px solid #000;
+    border-left: 5px solid #000;
+}
+
+.circle-div{
+}
+
+.circle{
+    position: absolute;
+    left: 346px;
+    top: 126px;
+    width: 150px;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.k {
+    position: absolute;
+    left: 372px;
+    top: 152px;
+    width: 98px;
+    animation-duration: 0.5s!important;
+    -webkit-animation-duration: 0.5s!important;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.u2 , .u3 {
+     animation-duration: .1s!important;
+     -webkit-animation-duration: 0.1s!important;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.u1 , .u4 {
+     animation-duration: 1s!important;
+     -webkit-animation-duration: 1s!important;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.m2 , .m5 {
+     animation-duration: .1s!important;
+     -webkit-animation-duration: 0.1s!important;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.m1 , .m6 {
+     animation-duration: 1s!important;
+     -webkit-animation-duration: 1s!important;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.m3 , .m4 {
+     animation-duration: .1s!important;
+     -webkit-animation-duration: 0.1s!important;
+    -animation-delay: 0s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+} 
+
+.l2, .l3  {
+     animation-duration: 0.01s!important;
+     -webkit-animation-duration: 0.01s!important;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.l1 , .l4 {
+     animation-duration: 1s!important;
+     -webkit-animation-duration: 1s!important;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+
+.event-detail {
+    position: fixed;
+    top: 80px;
+    visibility: hidden;
+}
+
+.event-detail .register {
+    display: inline-block;
+    padding: 10px;
+    background: #D9D9D9;
+    text-transform: uppercase;  
+    border-radius: 5px;  
+}
+
+.event-detail .close {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+    background: #D9D9D9;
+    text-transform: uppercase; 
+    border-radius: 5px;   
+}
+
+.div-register{ 
+    text-align: center;             
+    margin-top: 10px;
+}
+
+.div-register a{ 
+    color: #000;
+}
+
+.event-detail-wrapper{
+    width: 80%;
+    padding: 20px 25px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 3px 3px 30px #000;
+    text-align: justify;
+}
+
+.event-detail-wrapper h2 {
+    margin: 5px 0;
+}
+
+.event-detail-wrapper p {
+    margin: 5px 0;
+}
+
+
+
+
+/*CODE FOR INDEX.HTML PAGE STARTS HERE*/
+
+.iit {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    visibility: hidden;
+}
+
+.central-tab {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 50%;
+    margin-left: -249px;
+    background-color:rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 20px 20px;
+    padding: 5px 15px 10px;
+    visibility: hidden;
+}
+
+.central-tab span {
+    display: inline-block;
+    font-size: 24px;
+    color: #07073F;
+    margin: 5px;
+}
+
+.ics {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+    padding-top: 5px;
+    visibility: hidden;
+}
+
+.img-iit {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;   
+}
+
+.img-ics {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.header p {
+    margin-top: 0;
+    margin-bottom: 1px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #07073F;    
+}
+
+.second-wrap{
+    margin-top: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;    
+}
+
+.keramos {
+    width: 600px;
+    visibility: hidden;
+}
+
+.date{
+    text-align: right;
+     font-size: 24px;
+     color: #07073F; 
+     margin: 0;
+    padding-right: 10px; 
+    visibility: hidden; 
+}
+
+.k-back{
+    position: fixed;
+    bottom: 0;
+    left: -2px;
+    width: 450px;
+    height: auto;
+    opacity: 0.05;
+}
+
+.event-info-wrapper{
+    position: relative;
+    margin-top: 50px;
+}
+
+.event-info {
+     visibility: hidden;
+     text-align: center;
+}
+
+.event-info>p {
+   margin: 0 auto 4px;
+   font-size: 20px;
+   color: #07073F;   
+}
+
+/* CSS for Index.Html Page ENDS Here*/
+
+
+
+
+/* CSS for About Page Starts Here*/
+
+.loader{
+    height: 100%;
+    width: 100%
+}
+
+.k-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -49px;
+    margin-top: -49px;
+    
+}
+
+.circle-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;    
+    margin-top: -75px;
+    margin-left: -75px;
+}
+
+.about-wrapper{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.about-keramos{
+    visibility: hidden;
+}
+
+.about-dept{
+    visibility: hidden;
+}
+
+.about-convenor{
+    visibility: hidden;
+}
+
+.about-wrapper h2{
+    font-size: 1.5em;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #07073F;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.about-wrapper p{
+    text-align: justify;
+    text-align-last: center;
+    font-weight: 600;
+    margin: 10px 0 30px;
+    font-size: 1em;
+}
+
+
+/* CSS for About Page Ends Here*/
+
+
+
+
+/* CSS for Contacts Page Starts Here*/
+
+.contacts-wrapper{
+    
+}
+
+.upper-container{
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.upper-container .contact-box{
+    margin-top: 0;
+}
+
+.lower-container{
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.lower-container a{
+    font-size: 2em;
+    text-decoration: none;
+    color: #07073F;
+    letter-spacing: -0.04em;
+}
+
+.fb{
+    display: inline-block;
+    width: 420px;
+    text-align: center;
+    margin: 10px;
+}
+
+.gmail{
+    display: inline-block;
+    width: 420px;
+    text-align: center;
+    margin: 10px;
+}
+
+.img-fb{
+    width: 75px;
+    display: block;
+    margin: auto;
+}
+
+.img-gmail{
+    width: 75px;
+    display: block;
+    margin: auto;
+}
+
+.main-hr{
+    visibility: hidden;
+}
+
+.people{
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.contact-box{
+    width: 260px;
+    margin: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.person-image{
+    width: 200px;
+    height: auto;
+	visibility: hidden;
+
+}
+
+.person-info{
+    background: #eee;
+    margin-top: -10px;
+  	position:relative;       
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.person-info:before, .person-info:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+}
+
+ p.person-name{
+    margin: 5px 0 2px;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+ p.designation{
+    margin: 0 0 -10px;
+    font-size: 0.9em;   
+}
+
+hr.sep{
+    margin: 2px;
+    display: inline-block;
+    width: 80%;
+    border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+p.mobile{
+    margin: -5px 0 0;
+     font-size: 0.9em;
+
+}
+
+p.email{
+    margin: 0 ;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+  
+}
+
+.img-circle{
+    border-radius: 150px;
+}
+
+
+
+/* CSS for Register Page Starts Here*/
+
+.form-wrapper{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.form-wrapper h1{
+	color: #616161;
+}
+
+.input-element{
+    display: block;
+    padding: 5px 5px;
+}
+
+.input-element label{
+    width: 20%;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #616161;
+    background: #CFCFCF;
+    border: 1px solid #DADADA;
+    box-shadow: -1px 1px 2px 0px #343131;
+    margin-right: -2px;
+    padding: 4px 0 4px 10px;
+    border-radius: 15px 0 0 15px;
+}
+
+.input-element input{
+    width: 79%;
+}
+
+input[type=text], input[type=email], input[type=number]
+{
+    background-color: #E8E8E8;
+    border-radius: 0 15px 15px 0;
+    color: #2A2A2A;
+    height: 33px;
+    padding-left: 10px;
+    font-size: 1em;
+    width: 70%;
+}
+
+.select-event-label h2{
+    margin: 10px 0 0;
+    min-width: 70%;
+    display: inline-block;
+    padding: 2px 0 5px;
+    color: #616161;
+    border-top: 1px dashed #7B7B7B;
+    border-bottom: 1px dashed #7B7B7B;
+}
+
+.input-element.event-options label {
+    border-radius: 0;
+    margin-top: 2px;
+    min-width: 200px;
+	padding-bottom: 0;
+}
+
+
+input[type="checkbox"]{
+    display: inline-block;
+	width: 20px;
+	margin-right: 5px;
+	margin-left: -10px;
+	visibility: hidden;
+}
+
+input[type="checkbox"]:checked {
+    visibility: visible;
+}
+
+.event-options span {
+	vertical-align: top;
+	cursor: pointer;
+}
+
+/* Main Classes */
+.myinput[type="checkbox"]:before{
+    position: relative;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #CFCFCF;
+    content: "";
+    background: #CCC6C6;
+}
+.myinput[type="checkbox"]:after{
+    position: relative;
+    display: block;
+    left: 2px;
+    top: -11px;
+    width: 7px;
+    height: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B3B3B3 #dcddde #dcddde #B3B3B3;
+    content: "";
+    background-image: linear-gradient(135deg, #B1B6BE 0%,#FFF 100%);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.myinput[type="checkbox"]:checked:after{
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAIAAABvSEP3AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAfUlEQVR42sXSMQqAQAwEwPzj9Js2goXgk+wsLGz8lYKiqMleEgMHWw+7IdROCaSbq37hM6z1FcoqEmRQlHWoGdP/OnGKBsKjtAqucyoYAsoBqZTsKIMCRt2Ku06MssemSNBDcdcppLDQW/G9n02RRnmUL8QojlGFFPY0McoGb1vDmqnDyjsAAAAASUVORK5CYII='), linear-gradient(135deg, #B1B6BE 0%,#FFF 100%);
+}
+
+.myinput[type="checkbox"]:not(:disabled):hover:after{
+    background-image: linear-gradient(135deg, #8BB0C2 0%,#FFF 100%);  
+    border-color: #85A9BB #92C2DA #92C2DA #85A9BB;  
+}
+.myinput[type="checkbox"]:not(:disabled):hover:before{
+    border-color: #3D7591;
+}
+/* Large checkboxes */
+.myinput.large{
+    height:22px;
+    width: 22px;
+}
+
+.myinput.large[type="checkbox"]:before{
+    width: 20px;
+    height: 20px;
+}
+.myinput.large[type="checkbox"]:after{
+    top: -20px;
+    width: 16px;
+    height: 16px;
+}
+/* Custom checkbox */
+.myinput.large.custom[type="checkbox"]:checked:after{
+background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAIAAABvSEP3AAAACXBIWXMAAC4jAAAuIwF4pT92AAAAfUlEQVR42sXSMQqAQAwEwPzj9Js2goXgk+wsLGz8lYKiqMleEgMHWw+7IdROCaSbq37hM6z1FcoqEmRQlHWoGdP/OnGKBsKjtAqucyoYAsoBqZTsKIMCRt2Ku06MssemSNBDcdcppLDQW/G9n02RRnmUL8QojlGFFPY0McoGb1vDmqnDyjsAAAAASUVORK5CYII='), linear-gradient(135deg, #B1B6BE 0%,#FFF 100%);
+}
+/* End Custom checkbox */
+
+input[type=submit]
+{
+    width: 200PX;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
+    vertical-align: middle;
+    color: #616161;
+    background: #CFCFCF;
+    border: 1px solid #DADADA;
+    box-shadow: -1px 1px 2px 0px #343131;
+    margin: 15px 0 5px;
+    padding:8px 0 5px;
+    border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+    background: #eee;
+    border: 1px solid #DADADA;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+/* CSS for Register Page Ends Here*/
+
+
